@@ -1,30 +1,16 @@
 # uni-app-springboot
 
 #### 介绍
-用HbuilderX 开发的uni-app小案例。简单封装了uni.request请求
-
-#### 软件架构
-软件架构说明
+用HBuilderX 开发的uni-app小案例。
 
 
-#### 安装教程
+#### 代码内容
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. 简单封装了uni.request请求。
+2. 登录信息加密处理
+3. TOKEN信息处理
 
-#### 使用说明
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
 
 
 #### 码云特技
