@@ -1,0 +1,21 @@
+@import "../../common/vendor.wxss";
+
+.list-page {
+  background: #fafafa;
+}
+.text {
+  margin: 16rpx 0;
+  background-color: #fff;
+  color: #555;
+  border-radius: 8rpx;
+  padding: 20rpx;
+}
+.home-list-block-title {
+  border-bottom: 1rpx solid #f6f6f6;
+  margin-bottom: 5rpx;
+}
+.home-list-block-detail {
+  color: #aaa;
+  font-size: 12rpx;
+  line-height: 26rpx;
+}

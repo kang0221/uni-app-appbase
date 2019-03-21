@@ -1,0 +1,13 @@
+<import src="/components/m-icon/m-icon.vue.wxml" />
+<template name="c55752a6">
+  <view class="_view data-v-30fa8fa8 m-input-view">
+    <input focus="{{focus_}}" value="{{realValue}}" bindinput="handleProxy" class="_input data-v-30fa8fa8 m-input-input me-login-username-input" placeholder="{{placeholder}}" password="{{type==='password'&&!showPassword}}" bindfocus="handleProxy" bindblur="handleProxy"
+      data-eventid="{{'pri-0'}}" data-comkey="{{$k}}" />
+    <view wx:if="{{clearable_&&!displayable_}}" class="_view data-v-30fa8fa8 m-input-icon">
+      <template type="clear" size="20" bindtap="handleProxy" data-eventid="{{'s48-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'m4Q-0'],$root}}" is="2d837f82"></template>
+    </view>
+    <view wx:if="{{displayable_}}" class="_view data-v-30fa8fa8 m-input-icon">
+      <template type="eye" size="20" bindtap="handleProxy" data-eventid="{{'8Ei-2'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'NCj-1'],$root}}" is="2d837f82"></template>
+    </view>
+  </view>
+</template>

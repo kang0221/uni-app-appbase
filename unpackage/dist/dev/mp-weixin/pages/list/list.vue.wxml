@@ -1,0 +1,17 @@
+<template name="cb6cba6a">
+  <view class="_view data-v-4d0b58b9 list-page">
+    <view class="_view data-v-4d0b58b9 uni-padding-wrap uni-common-mt">
+      <view class="_view data-v-4d0b58b9 text" wx:key="index" key="{{index}}" wx:for="{{data}}" wx:for-index="index" wx:for-item="invitation">
+        <view class="_view data-v-4d0b58b9 home-list-block-title">
+          <view class="_view data-v-4d0b58b9 long-text-to-point">{{invitation.ppName}}</view>
+        </view>
+        <view class="_view data-v-4d0b58b9">
+          <view class="_view data-v-4d0b58b9 home-list-block-detail long-text-to-point">项目编号：{{invitation.ppCode}} </view>
+          <view class="_view data-v-4d0b58b9 home-list-block-detail long-text-to-point" wx:if="{{invitation.pacName}}">标段：{{invitation.pacName}} </view>
+          <view class="_view data-v-4d0b58b9 home-list-block-detail">发布时间：{{invitation.inviteRepDate}} </view>
+        </view>
+      </view>
+      <view class="_view data-v-4d0b58b9 uni-loadmore" wx:if="{{showLoadMore}}">{{loadMoreText}}</view>
+    </view>
+  </view>
+</template>

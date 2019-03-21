@@ -1,0 +1,13 @@
+<template name="6fe22bab">
+  <view class="_view data-v-22a3e199 content">
+    <progress percent="20" show-info stroke-width="3" class="_progress data-v-22a3e199" />
+    <view wx:if="{{userInfo.isLogin}}" class="_view data-v-22a3e199 hello">
+      <view wx:if="{{userInfo.isLogin}}" class="_view data-v-22a3e199 title"> 您好 {{userInfo.emName}}，您已成功登录。 </view>
+      <view wx:if="{{!userInfo.isLogin}}" class="_view data-v-22a3e199 title"> 您好 游客。 </view>
+      <view class="_view data-v-22a3e199 ul">
+        <view class="_view data-v-22a3e199">这是 uni-app 带登录模板的示例App首页。</view>
+        <view class="_view data-v-22a3e199">在 “我的” 中点击 “登录” 可以 “登录您的账户”</view>
+      </view>
+    </view>
+  </view>
+</template>

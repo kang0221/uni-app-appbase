@@ -1,0 +1,47 @@
+<template name="46acf22a">
+  <view class="_view data-v-e129864e content">
+    <view class="_view data-v-e129864e btn-row">
+      <button type="primary" class="_button data-v-e129864e primary" bindtap="handleProxy" data-eventid="{{'IGX-0'}}" data-comkey="{{$k}}">
+        <view class="_i data-v-e129864e icon iconfont icon-app_icons--" style="font-size: 18rpx;"></view>
+        <text class="_text data-v-e129864e"> 检查更新1</text>
+      </button>
+      <view class="_br data-v-e129864e"></view>
+      <button type="primary" class="_button data-v-e129864e primary" bindtap="handleProxy" data-eventid="{{'7Sb-1'}}" data-comkey="{{$k}}">
+        <view class="_i data-v-e129864e icon iconfont icon-app_icons--" style="font-size: 18rpx;"></view>
+        <text class="_text data-v-e129864e"> 检查更新2</text>
+      </button>
+      <view class="_br data-v-e129864e"></view>
+      <view wx:if="{{download}}" class="_view data-v-e129864e"> 已下载: {{size/1024/1024 + 'M'}}
+        <view class="_br data-v-e129864e"></view> 总共: {{download.totalSize/1024/1024 + 'M'}}
+        <view class="_br data-v-e129864e"></view> 完成进度: {{size/download.totalSize * 100}}% </view>
+      <view class="_br data-v-e129864e"></view>
+      <view class="_br data-v-e129864e"></view>
+      <view class="_br data-v-e129864e"></view>
+      <view class="_view data-v-e129864e">======================</view>
+      <view wx:if="{{download}}" class="_view data-v-e129864e"> ID: {{download.id}}
+        <view class="_br data-v-e129864e"></view> URL: {{download.url}}
+        <view class="_br data-v-e129864e"></view> 状态: {{download.state}}
+        <view class="_br data-v-e129864e"></view> 参数: {{download.options}}
+        <view class="_br data-v-e129864e"></view> 文件名: {{download.filename}}
+        <view class="_br data-v-e129864e"></view> 已下载: {{download.downloadedSize}}
+        <view class="_br data-v-e129864e"></view> 总大小: {{download.totalSize}}
+        <view class="_br data-v-e129864e"></view>
+      </view>
+      <view class="_br data-v-e129864e"></view>
+      <view class="_br data-v-e129864e"></view>
+      <view class="_br data-v-e129864e"></view>
+      <view class="_view data-v-e129864e">======================</view>
+      <view wx:if="{{download}}" class="_view data-v-e129864e"> {{dtask.id}}
+        <view class="_br data-v-e129864e"></view> {{dtask.url}}
+        <view class="_br data-v-e129864e"></view> {{dtask.state}}
+        <view class="_br data-v-e129864e"></view> {{dtask.options}}
+        <view class="_br data-v-e129864e"></view> {{dtask.filename}}
+        <view class="_br data-v-e129864e"></view> {{dtask.downloadedSize}}
+        <view class="_br data-v-e129864e"></view> {{dtask.totalSize}}
+        <view class="_br data-v-e129864e"></view>
+      </view>
+      <button wx:if="{{!isLogin}}" type="primary" class="_button data-v-e129864e primary" bindtap="handleProxy" data-eventid="{{'ly3-2'}}" data-comkey="{{$k}}">登录</button>
+      <button wx:if="{{isLogin}}" type="default" bindtap="handleProxy" data-eventid="{{'GGW-3'}}" data-comkey="{{$k}}" class="_button data-v-e129864e">退出登录</button>
+    </view>
+  </view>
+</template>

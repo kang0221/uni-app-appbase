@@ -1,0 +1,35 @@
+@import "../../common/vendor.wxss";
+
+.me-image {
+  width: 100%;
+  position: absolute;
+}
+.me-login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  z-index: 1;
+  padding-top: 100%;
+}
+.me-login-input {
+  z-index: 1;
+  margin: 30rpx 10rpx;
+  width: 60%;
+}
+.reg-submit {
+  display: block;
+  margin-top: 30rpx;
+  padding: 10rpx;
+  text-align: center;
+  color: white;
+  border-radius: 23.5rpx;
+  background-color: #2196f3;
+  box-shadow: 0 0 10rpx rgba(51, 211, 201, .35);
+}
